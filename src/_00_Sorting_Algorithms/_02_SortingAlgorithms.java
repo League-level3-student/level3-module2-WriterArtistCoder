@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  * SelectionSorter
  * InsertionSorter
  * TODO QuickSorter
- * TODO MergeSorter
+ * MergeSorter
  * HeapSorter
  * BogoSorter
  */

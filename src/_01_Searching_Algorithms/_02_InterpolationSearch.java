@@ -34,8 +34,12 @@ public class _02_InterpolationSearch {
 			}
             //6. if the array element at position is less than value,
             //   then set start equal to position plus one
-            
+            if (array[position] < value) {
+            	start = position + 1;
             //7. otherwise, set end equal to position minus one
+			} else {
+				end = position - 1;
+            }
 			
 		}
         //8. Return -1 because the value was not found

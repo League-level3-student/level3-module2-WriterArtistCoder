@@ -17,7 +17,6 @@ public class MergeSorter extends Sorter {
 	}
 	
 	private void mergeSort(int[] array, int low, int high, SortingVisualizer display) {
-		System.out.println(array);
 		//1. Create a temporary integer array that is the same length as the passed in array.
 		int[] arr = new int[array.length];
 		//2. make an if statement that checks if low is less than high
@@ -25,7 +24,7 @@ public class MergeSorter extends Sorter {
 		if (low < high) {
 			//3. Create an integer called middle and set it 
 			//   equal to the half way point between low and high
-            int middle = _01_SwappingDigits.findMiddle(array); /** NOT WORKING!!! */
+            int middle = (low+high)/2;
             //4. call the mergeSort method with low and middle
             mergeSort(array, low, middle, display);
             //5. call the mergeSort method with middle + 1 and high
@@ -70,6 +69,7 @@ public class MergeSorter extends Sorter {
                 k++;
             }
             
+            display.updateDisplay();
 		}
 	}
 
