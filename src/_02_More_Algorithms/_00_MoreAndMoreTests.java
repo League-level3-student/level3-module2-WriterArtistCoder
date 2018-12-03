@@ -25,7 +25,7 @@ public class _00_MoreAndMoreTests {
 	@Test
 	  public void PrimeTest() {
 
-	    assertTrue(isPrime(3));
+		assertTrue(isPrime(3));
 	    assertTrue(isPrime(5));
 	    assertTrue(isPrime(541));
 	    assertFalse(isPrime(4));
@@ -35,21 +35,13 @@ public class _00_MoreAndMoreTests {
 	  }
 	
 	public boolean isPrime(int x) {
-		if (x/4 <= 1) {
-			return true;
-		}
-		
-		for (int i = Math.round(x/2); i >= Math.max(Math.round(x/4), 2); i++) {
+		for (int i = 2; i <= (int) Math.floor(Math.sqrt(x)); i++) {
 			if (x%i == 0) {
 				return false;
 			}
 		}
 		
-		if (x/4 <= 1) {
-			return true;
-		} else {
-			return isPrime(Math.round(x/2));
-		}
+		return true;
 	}
 
 	@Test
