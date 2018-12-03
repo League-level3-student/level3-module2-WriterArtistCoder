@@ -5,6 +5,7 @@ import java.util.List;
 import _00_Sorting_Algorithms._00_SortedArrayChecker;
 
 public class Algorithms {
+	
 	public static int findBrokenEgg(List<String> eggs) {
 		for (int i = 0; i < eggs.size(); i++) {
 			if (eggs.get(i) == "cracked") {
