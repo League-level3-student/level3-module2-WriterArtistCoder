@@ -15,7 +15,7 @@ public class SortingVisualizer extends JLabel{
 	private static final int WIDTH = 500;
 	private static final int HEIGHT = 500;
 	
-	private static final int ARRAY_SIZE = 250;
+	private static final int ARRAY_SIZE = 20; // set to 250
 	private static final int MAX = 500;
 	
 	private int cellWidth;
@@ -78,6 +78,9 @@ public class SortingVisualizer extends JLabel{
 		for(int i = 0; i < array.length; i++) {
 			array[i] = randGen.nextInt(MAX);
 		}
+		
+		array = new int[] {38, 361, 138, 426, 492, 11, 273, 381, 215, 12, 271, 485, 409, 259, 35, 253, 408, 377, 232, 239};
+		
 		updateDisplay();
 	}
 }
